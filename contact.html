@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
-	<title> contact - La chouette agence </title>
+	<title> Contact - La chouette agence </title>
 
 	<meta name="description" content="Contactez la chouette agence, une agence de web design qui aide les entreprises à devenir attractives et visibles sur Internet. Laissez-nous vous réaliser un design dont vous serez fier.">
 	<meta charset="utf-8">
@@ -10,13 +10,13 @@
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 
-	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script src="./js/jqBootstrapValidation.min.js"></script>
+	<script src="./js/formHandler.min.js"></script>
 	<script src="./js/blocs.min.js"></script>
 
 	<!-- Analytics -->
@@ -57,10 +57,10 @@
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1 class="text-center hero-bloc-text tc-white">
+					<h1 class="text-center hero-bloc-text white">
 						Parlons web design !
 					</h1>
-					<p class="text-center mg-lg tc-white tight-width-whitespace">
+					<p class="text-center mg-lg tight-width-whitespace white">
 						Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 						Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 					</p>
@@ -75,29 +75,30 @@
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
-					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<form id="form_1" novalidate data-success_msg="Your message has been sent." data-fail_msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 						<div class="form-group">
-							<label>
+							<label for="name">
 								Nom
 							</label>
 							<input id="name" class="form-control" required />
 						</div>
 						<div class="form-group">
-							<label>
+							<label for="email">
 								Adresse email
 							</label>
 							<input id="email" class="form-control" type="email" required />
 						</div>
 						<div class="form-group">
-							<label>
+							<label for="question">
 								Comment nous avez-vous connu ?
 							</label>
-							<input class="form-control" type="email" required id="input_504" />
+							<input id="question" class="form-control" type="text" required />
 						</div>
 						<div class="form-group">
-							<label>
+							<label for="message">
 								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-							</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+							</label>
+							<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 						</div>
 						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 							Envoyer

@@ -1025,15 +1025,20 @@ h4 {
 }
 
 /** Optimisation css */
-.title-contact {
+.title-bloc-5 {
     position: relative;
     z-index: 1;
     font-weight: bold;
     font-size: 30px;
 }
 
-.btn-contact {
+.btn-contact, .btn-send {
     font-size: 20px;
+    background-color: #c27956;
+}
+
+.btn-contact:hover {
+    background-color: #f3976c;
 }
 
 q {
@@ -1044,4 +1049,21 @@ q {
 
 .author {
     font-size: 16px;
+}
+
+footer {
+    background-color: #c27956 !important;
+}
+
+footer p {
+    font-size: 25px;
+}
+
+.title-contact{
+    font-size:50px;
+    font-weight:700
+}
+
+.underline {
+    text-decoration: underline;
 }
